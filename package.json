@@ -1,6 +1,6 @@
 {
   "name": "pico-exchange",
-  "homepage": "http://bitexglobal.net/picoex/",
+  "homepage": "https://bitexglobal.net/picoex/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
