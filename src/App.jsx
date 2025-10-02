@@ -24,7 +24,7 @@ function App() {
       <Header />
       <Routes>
         <Route
-          path="/"
+          path="/picoex"
           element={
             <>
               <Hero />
