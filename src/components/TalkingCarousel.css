@@ -1,0 +1,27 @@
+.talking-section { padding: 100px 24px 140px; background:#121827; color:#e6f7ee; overflow:hidden; }
+.talking-title { text-align:center; font-size:44px; margin:0; }
+.twinkles { text-align:center; margin:8px 0 24px; color:#d6e2f3; }
+.twinkles span { margin:0 6px; opacity:.8; }
+.carousel-mask { position:relative; max-width:1200px; margin:0 auto; overflow:hidden; }
+.carousel-track { display:flex; gap:28px; width:max-content; animation:slide 40s linear infinite; padding:10px; }
+.review-card { flex:0 0 520px; background:#1b2233; border-radius:18px; padding:24px; box-shadow:0 10px 40px rgba(0,0,0,.35); }
+.review-header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+.avatar { width:46px; height:46px; display:grid; place-items:center; background:#2a3349; border-radius:50%; }
+.user { display:flex; align-items:center; gap:8px; }
+.name { font-weight:700; }
+.verified { color:#29e085; }
+.stars { color:#29e085; margin:8px 0; letter-spacing:2px; }
+.review-text { color:#dbe6f0; line-height:1.7; }
+.date { margin-top:10px; color:#90a0b7; font-size:12px; }
+
+@keyframes slide {
+  0% { transform:translateX(0); }
+  100% { transform:translateX(-50%); }
+}
+
+@media (max-width: 980px){
+  .review-card{ flex-basis: 80vw; }
+  .carousel-track{ gap:16px; }
+}
+
+

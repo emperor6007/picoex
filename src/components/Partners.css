@@ -1,0 +1,498 @@
+.partners-container {
+  background: #2a2a2a;
+  padding: 3rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.partners-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.partners-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.partners-track {
+  display: flex;
+  gap: 3rem;
+  padding: 0 2rem;
+  min-width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.partner-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.partner-logo:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.logo-symbol {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.partner-name {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.partner-name-multiline {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Swapzone Logo */
+.swapzone .satellite-icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.satellite-circle {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #0066ff, #ff0066);
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.satellite-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  background: #0066ff;
+  border-radius: 1px;
+}
+
+.line-1 {
+  width: 8px;
+  height: 2px;
+  top: 8px;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.line-2 {
+  width: 6px;
+  height: 2px;
+  top: 16px;
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.line-3 {
+  width: 10px;
+  height: 2px;
+  bottom: 8px;
+  left: 4px;
+  transform: rotate(0deg);
+}
+
+.swapzone .partner-name {
+  color: #ff0066;
+}
+
+/* LocalCoinSwap Logo */
+.overlapping-shapes {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.shape {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.shape-blue {
+  background: #0066ff;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.shape-yellow {
+  background: #ffcc00;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+/* NOW Wallet Logo */
+.shield-logo {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.shield-outline {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #00ff88, #0066ff, #ff0066);
+  border-radius: 8px 8px 12px 12px;
+  position: relative;
+}
+
+.shield-outline::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: #1a1a1a;
+  border-radius: 6px 6px 10px 10px;
+}
+
+.shield-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00ff88;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* EXODUS Logo */
+.hexagon-logo {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.hex-shape {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0066ff, #8a2be2);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* NOWPayments Logo */
+.now-text {
+  color: #0066ff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* COIN Rabbit Logo */
+.coin-button {
+  width: 32px;
+  height: 24px;
+  background: #0066ff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-text {
+  color: #ffffff;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Tangem Logo */
+.tangem-icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.tangem-shape {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+  position: relative;
+}
+
+.tangem-shape::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #1a1a1a;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+/* GUARDA Logo */
+.guarda-shield {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.shield-icon {
+  width: 100%;
+  height: 100%;
+  background: #6a5acd;
+  border-radius: 8px 8px 12px 12px;
+  position: relative;
+}
+
+.shield-icon::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.shield-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 1px;
+}
+
+/* Cake Wallet Logo */
+.cake-logo {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.cake-circle {
+  width: 100%;
+  height: 100%;
+  background: #87ceeb;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cake-c {
+  position: absolute;
+  left: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cake-w {
+  position: absolute;
+  right: 8px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #87ceeb;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rubic Logo */
+.rubic-cube {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.cube-3d {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #00ff88, #00cc66);
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 255, 136, 0.3);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.cube-3d::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: 4px;
+  bottom: 4px;
+  background: linear-gradient(45deg, #00cc66, #009944);
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.cube-3d::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(45deg, #00ff88, #00cc66);
+  border-radius: 6px;
+  z-index: -2;
+}
+
+/* Animations */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 4px 8px rgba(0, 255, 136, 0.3);
+  }
+  100% {
+    box-shadow: 0 4px 16px rgba(0, 255, 136, 0.6);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .partners-track {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .partner-item {
+    min-width: 180px;
+  }
+
+  .logo-symbol {
+    width: 36px;
+    height: 36px;
+  }
+
+  .partner-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-container {
+    padding: 2rem 0;
+  }
+
+  .partners-track {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .partner-item {
+    min-width: 160px;
+  }
+
+  .logo-symbol {
+    width: 32px;
+    height: 32px;
+  }
+
+  .partner-name {
+    font-size: 0.8rem;
+  }
+
+  .partner-name-multiline {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-track {
+    gap: 1rem;
+  }
+
+  .partner-item {
+    min-width: 140px;
+  }
+
+  .logo-symbol {
+    width: 28px;
+    height: 28px;
+  }
+
+  .partner-name {
+    font-size: 0.7rem;
+  }
+
+  .partner-name-multiline {
+    font-size: 0.7rem;
+  }
+}
+
+/* Pause animation on hover */
+.partners-track:hover {
+  animation-play-state: paused;
+}

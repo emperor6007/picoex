@@ -1,0 +1,18 @@
+.defi-section { padding: 100px 24px; background:#0f1320; color:#e6f7ee; }
+.defi-container { max-width:1200px; margin:0 auto; display:flex; gap:80px; align-items:center; }
+.defi-illustration { position:relative; width:420px; height:320px; }
+.unicorn { position:absolute; left:120px; top:20px; width:180px; height:180px; background:linear-gradient(135deg,#ff7ad1,#ffd2ea); border-radius:50%; box-shadow:0 10px 40px rgba(255,122,209,.2); }
+.bunny { position:absolute; left:10px; bottom:10px; width:160px; height:160px; background:linear-gradient(135deg,#ffd39b,#fff0c4); border-radius:50%; box-shadow:0 10px 40px rgba(255,211,155,.2); }
+.defi-content { flex:1; }
+.defi-title { font-size:48px; margin:0 0 16px; }
+.defi-subtitle { color:#a9b4c0; max-width:760px; }
+.defi-list { list-style:none; padding:0; margin:24px 0; display:grid; gap:12px; }
+.defi-list .tick { color:#29e085; margin-right:10px; }
+.more-link { color:#29e085; text-decoration:none; }
+
+@media (max-width: 900px){
+  .defi-container{ flex-direction:column-reverse; }
+  .defi-illustration{ width:100%; height:240px; }
+}
+
+

@@ -1,0 +1,656 @@
+.hero-container {
+  padding: 150px 150px;
+
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Crypto Background */
+.crypto-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 1;
+}
+.crypto-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.hero-content {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  padding: 2rem;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* Main Row: Left Column and Right Card */
+.main-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+.subtitle1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+.subtitle2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #aeb0b5;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  background: #00ff88;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.check-icon1 {
+  width: 24px;
+  height: 24px;
+  background: #0066cc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.payment-text {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  opacity: 0.9;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.visa-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.mastercard-logo {
+  position: relative;
+  width: 40px;
+  height: 25px;
+}
+
+.mc-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 2.5px;
+}
+
+.mc-circle.red {
+  background: #eb001b;
+  left: 0;
+}
+
+.mc-circle.orange {
+  background: #f79e1b;
+  right: 0;
+}
+
+.generic-card {
+  width: 40px;
+  height: 25px;
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  border-radius: 4px;
+}
+
+.exchange-section {
+  flex: 0 0 600px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Right Content - Exchange Form */
+.exchange-form {
+  background: #2a2a2a;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.form-tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.form-tab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 10px 18px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.form-tab.active {
+  background: #4a3a5a;
+  color: #ffffff;
+}
+
+.spanish-flag {
+  display: flex;
+  align-items: center;
+}
+
+.input-section {
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  bottom: 12px;
+  font-size: 12px;
+  color: #aaa;
+  pointer-events: none;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #3e3e59;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.amount-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  padding: 20px 17px 6px 12px; /* extra top padding to make space for label */
+}
+
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 55px;
+  padding: 12px 16px;
+  background: #36324a;
+  border-left: 1px solid #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  min-width: 80px;
+  justify-content: flex-end;
+}
+
+.currency-selector:hover {
+  background: #f5f5f5;
+}
+
+.btc-icon,
+.usdt-icon {
+  width: 20px;
+  height: 20px;
+  background: #f7931a;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.currency-code {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.dropdown-arrow {
+  color: #666;
+  transition: transform 0.2s ease;
+  width: 12px;
+  height: 12px;
+}
+.input-info-row {
+  display: flex;
+  justify-content: space-between; /* pushes left and right apart */
+  align-items: center; /* vertically center icon with text */
+  margin-top: 12px; /* optional spacing */
+}
+
+.input-info {
+  display: flex;
+  flex-direction: column; /* stack "no fees" above "rate" */
+  gap: 4px;
+}
+
+.no-fees {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #00ff88;
+}
+
+.green-dot {
+  width: 6px;
+  height: 6px;
+  background: #00ff88;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rate-info {
+  font-size: 12px;
+  color: #999;
+}
+
+.swap-icon {
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.warning-box {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.exchange-button {
+  width: 100%;
+  background: #00ff88;
+  color: #000;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0;
+}
+
+.exchange-button:hover {
+  background: #00e677;
+  transform: translateY(-1px);
+}
+
+/* Bottom Promotional Banner */
+.promo-banner {
+  position: relative;
+  display: flex;
+  background: radial-gradient(circle at top left, #444 0%, #2a2a2a 70%);
+
+  padding: 1rem 2rem;
+  margin-top: 8rem;
+  border-radius: 12px;
+  width: 70%;
+}
+
+.banner-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.percentage-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.diamond-icon {
+  font-size: 1.2rem;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.banner-text {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.banner-button {
+  background: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  position: relative;
+}
+
+.banner-button:hover {
+  background: #5a5a5a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 100px 1rem;
+  }
+
+  .hero-content {
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .main-row {
+    gap: 2rem;
+    max-width: 100%;
+  }
+
+  .subtitle1 {
+    font-size: 2.4rem;
+  }
+
+  .subtitle2 {
+    font-size: 2.1rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .exchange-section {
+    flex: 0 0 500px;
+  }
+
+  .exchange-form {
+    padding: 1.25rem;
+  }
+
+  .payment-methods {
+    gap: 0.8rem;
+  }
+
+  .promo-banner {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 50px 0;
+  }
+  /* .dropdown-menu {
+    max-height: 100px;
+  } */
+  /* 
+  .dropdown-menu {
+    max-height: 180px; /* Slightly smaller but still visible */
+  /* overflow-y: auto; */
+  /* } */
+
+  .hero-content {
+    padding: 1rem 0;
+    gap: 1.2rem;
+  }
+
+  .main-row {
+    flex-direction: column; /* stack text and card */
+    gap: 1.5rem; /* keep space between them */
+    align-items: center;
+    width: 100%;
+  }
+
+  /* ✅ keep texts together, centered */
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem; /* reduce gap so Limitless + Web3.0 stay close */
+  }
+
+  .subtitle1 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .subtitle2 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* ✅ keep card full-width but not pushing text down */
+  .exchange-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .exchange-form {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  /* ✅ make sure “Buy crypto worldwide” stays under the titles, not under the card */
+  .trust-section {
+    margin-top: 1rem;
+    order: 3; /* force this section to always appear after the texts */
+    text-align: center;
+  }
+
+  .trust-item {
+    display: none;
+  }
+
+  .promo-banner {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Currency Selector Dropdown Styles */
+.currency-selector-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.currency-selector {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  background: #fff;
+  min-width: 80px;
+  transition: border-color 0.2s ease;
+}
+
+.currency-selector:hover {
+  border-color: #4f46e5;
+}
+
+.currency-selector .currency-code {
+  margin: 0 8px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.dropdown-arrow {
+  transition: transform 0.2s ease;
+  color: #6b7280;
+}
+
+.dropdown-arrow.rotated {
+  transform: rotate(180deg);
+}
+/* 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  /* background: white; */
+/* border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+} */
+
+.send-dropdown {
+  top: calc(100% + 4px);
+}
+
+.get-dropdown {
+  top: calc(100% + 4px);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  /* border-bottom: 1px solid #f3f4f6; */
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item .currency-code {
+  margin: 0 8px;
+  font-weight: 500;
+  /* color: #374151; */
+}
+
+/* Ensure the dropdown appears above other content */
+.exchange-form {
+  position: relative;
+  z-index: 10;
+}

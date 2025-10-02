@@ -1,0 +1,18 @@
+.pro-section { padding: 100px 24px; background:#111522; color:#e6f7ee; }
+.pro-container { max-width:1200px; margin:0 auto; display:flex; gap:80px; align-items:center; }
+.pro-content { flex:1; }
+.pro-title { font-size:48px; margin:0 0 16px; }
+.pro-subtitle { color:#a9b4c0; max-width:760px; }
+.pro-list { list-style:none; padding:0; margin:24px 0; display:grid; gap:12px; }
+.pro-list .tick { color:#29e085; margin-right:10px; }
+.more-link { color:#29e085; text-decoration:none; }
+.pro-illustration { position:relative; width:420px; height:320px; }
+.diamond { position:absolute; right:50px; top:20px; width:180px; height:180px; background:linear-gradient(145deg,#9dd7ff,#bfe6ff); transform:rotate(45deg); clip-path:polygon(50% 0, 100% 50%, 50% 100%, 0 50%); box-shadow:0 20px 60px rgba(0,180,255,.2); }
+.icons-ring { position:absolute; left:10px; bottom:10px; width:240px; height:240px; border:2px dashed rgba(41,224,133,.3); border-radius:50%; }
+
+@media (max-width: 900px){
+  .pro-container{ flex-direction:column; }
+  .pro-illustration{ width:100%; height:240px; }
+}
+
+

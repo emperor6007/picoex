@@ -1,0 +1,17 @@
+.press-section { padding: 100px 24px; background:#151a27; color:#e6f7ee; }
+.press-title { text-align:center; font-size:48px; margin:0 0 40px; }
+.press-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.press-card { background:#1b2131; border-radius:18px; padding:28px; box-shadow:0 10px 40px rgba(0,0,0,.35); }
+.press-logo { font-weight:800; letter-spacing:.5px; margin-bottom:16px; }
+.press-logo.investing span{ font-weight:600; opacity:.8; }
+.press-logo.benzinga{ letter-spacing:1px; }
+.press-logo.invezz{ font-style:italic; text-transform:lowercase; }
+.press-meta { color:#9fb0c5; font-size:14px; margin-bottom:18px; }
+.press-quote { color:#dbe6f0; line-height:1.75; font-size:18px; position:relative; padding-left:8px; }
+.quote-mark { position:absolute; left:-10px; top:-6px; font-size:28px; color:#5a6b83; }
+
+@media (max-width: 980px){
+  .press-grid{ grid-template-columns:1fr; }
+}
+
+
