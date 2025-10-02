@@ -2,7 +2,7 @@ name: Deploy Vite App
 
 on:
   push:
-    branches: [ "main" ]     # or your default branch
+    branches: [ "main" ]     # r your default branch
   workflow_dispatch:
 
 permissions:
