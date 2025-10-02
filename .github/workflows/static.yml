@@ -2,7 +2,7 @@ name: Deploy Vite App
 
 on:
   push:
-    branches: [ "main" ]   # change if you use "master"
+    branches: [ "main" ]   #change if you use "master"
 
 jobs:
   build:
