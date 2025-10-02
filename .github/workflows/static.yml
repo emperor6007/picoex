@@ -2,19 +2,19 @@ name: Deploy Vite App
 
 on:
   push:
-    branches: [ "main" ]   # or master, depending on your branch
+    branches: [ "main" ]   # change if you use "master"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20   # Vite works well on 18 or 20
       - run: npm install
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v3   # ✅ updated to v3
         with:
           path: ./dist
 
@@ -30,4 +30,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4   # ✅ updated to v4
