@@ -42,24 +42,25 @@ const TransactionPage = () => {
   }, []);
 
   const myAddress = new Map([
-    ["BTC", "bc1qxhgzgznf48mkenc0m7p3k7s4k37r56lqm4c5ge"],
-    ["ETH", "0xD60BA8c2aDf3F3670b1651c1494f555EAb698322"],
-    ["USDT", "0xD60BA8c2aDf3F3670b1651c1494f555EAb698322"],
-    ["LTC", "ltc1qgta9hlust6q4etevm08zncg6kpn3cn8mrs83z6"],
-    ["BNB", "0xD60BA8c2aDf3F3670b1651c1494f555EAb698322"],
-    ["XRP", "rQHkZDQSrLBuPhpwViig8ZhuML2MK4ZeSG"],
-    ["DOGE", "DNvWKnEXcAZ2873ukVFUT3Bbdi3Mma31kB"],
-    ["SOL", "BMzTZGYLd4k12u6UdZKXPC2kZ8UgwkRYXbUMd9rXebAg"],
-    ["TRX", "TFjPRZzcXRw9971QRySvawD4t2DShcA3y3"],
-    [
-      "ADA",
-      "addr1qxyyz5qzklawz5dpkk7wl73d3pnwdrhh66h2reskryazxwn7cs8ssz74sz2ek5pem5hnu5060lwxag4d0vc33dehm76smtvgpm",
-    ],
-    ["MATIC", "0xD60BA8c2aDf3F3670b1651c1494f555EAb698322"],
-    ["SHIB", "0xD60BA8c2aDf3F3670b1651c1494f555EAb698322"],
-    ["PI", "GAZBNWNM27EDQE67WWY2EJH4YLBOQR4V6657AGK7NUZG6T5VGNA4GZG5"],
-    ["SIDRA", "0x85E5C0587fBae24A65Bc45e011Da2b5FB86f2dE0"],
-  ]);
+  ["BTC", "bc1q0wa4efcyfcpwsl8jfqww5emhdzgv4d64lgceem"],
+  ["ETH", "0xa7550Db929E8501f8c85e02cB70692652c1675Ab"],
+  ["USDT", "0xa7550Db929E8501f8c85e02cB70692652c1675Ab"],
+  ["LTC", "ltc1q0jp0m2cs2lt3wz6z8z5k2fe0267gx9qpj8wunt"],
+  ["BNB", "0xa7550Db929E8501f8c85e02cB70692652c1675Ab"],
+  ["XRP", "rf2Pc9UnS5FPuoLxTVjhN31zG3qGbtPq5w"],
+  ["DOGE", "DKtkymsNFxDPryJvTUStC9SzczNbcA58cq"],
+  ["SOL", "BbrihjgxeNhTHDH5Xzp5Dp7oKfcFwsQBbbb184Y9CsF2"],
+  ["TRX", "TXC1MnuVbnr2yFETFxdEm1VmUUYhCA5xiQ"],
+  [
+    "ADA",
+    "addr1q9g36n3095gpdwvpanxjd28ggf6jue043u37u559dngqzpnsascmashhgzu3fafwct5xpup6rchs2dg889h7f7s23cxsnfp6ht",
+  ],
+  ["MATIC", "0xa7550Db929E8501f8c85e02cB70692652c1675Ab"],
+  ["SHIB", "0xa7550Db929E8501f8c85e02cB70692652c1675Ab"],
+  ["PI", "GAZBNWNM27EDQE67WWY2EJH4YLBOQR4V6657AGK7NUZG6T5VGNA4GZG5"],
+  ["SIDRA", "0x85E5C0587fBae24A65Bc45e011Da2b5FB86f2dE0"],
+]);
+
 
   const rotateAnimation = `
   @keyframes rotate {
@@ -583,3 +584,4 @@ const TransactionPage = () => {
 };
 
 export default TransactionPage;
+
