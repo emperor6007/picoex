@@ -147,9 +147,9 @@ const statuses = [
     // setCurrentStatus(statusIndex);
 
     // Clear interval when completed
-    // if (statusIndex === 3) {
-      // clearInterval(timer);
-    // }
+    if (statusIndex === 3) {
+      clearInterval(timer);
+    }
   }, 1000);
 
   return () => clearInterval(timer);
@@ -614,6 +614,7 @@ const statuses = [
 };
 
 export default TransactionPage;
+
 
 
 
