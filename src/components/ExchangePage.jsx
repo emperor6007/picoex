@@ -101,7 +101,7 @@ const ExchangePage = () => {
   // Mock USD prices for each currency (same as Hero.jsx)
   const ratesToUSD = useMemo(
     () => ({
-      BTC: 76450,
+      BTC: 87540,
       ETH: 4150,
       LTC: 150,
       BNB: 980,
