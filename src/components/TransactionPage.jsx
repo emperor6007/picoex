@@ -127,26 +127,33 @@ const TransactionPage = () => {
   const [currentStatus, setCurrentStatus] = useState(0);
   const [timeElapsed, setTimeElapsed] = useState(0);
 
-  const statuses = [
-    { name: "Awaiting deposit", color: "#10b981", icon: "◐" },
-    { name: "Confirming", color: "#6b7280", icon: "⟳" },
-    { name: "Exchanging", color: "#6b7280", icon: "⇄" },
-    { name: "Completed", color: "#6b7280", icon: "✓" },
-  ];
+const statuses = [
+  { name: "Awaiting deposit", color: "#10b981", icon: "◐", rotating: true },
+  { name: "Confirming", color: "#10b981", icon: "⟳", rotating: true },
+  { name: "Exchanging", color: "#10b981", icon: "⇄", rotating: true },
+  { name: "Completed", color: "#10b981", icon: "✓", rotating: false },
+];
 
   const depositAddress = myAddress.get(fromCurrency) || "";
 
+ 
   useEffect(() => {
-    const timer = setInterval(() => {
-      const elapsed = Math.floor((Date.now() - startTime) / 1000);
-      setTimeElapsed(elapsed);
+  const timer = setInterval(() => {
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    setTimeElapsed(elapsed);
 
-      const statusIndex = Math.min(Math.floor(elapsed / 60), 3);
-      setCurrentStatus(statusIndex);
-    }, 1000);
+    // Each status lasts 60 seconds, stop at status 3 (Completed)
+    const statusIndex = Math.min(Math.floor(elapsed / 60), 3);
+    setCurrentStatus(statusIndex);
 
-    return () => clearInterval(timer);
-  }, [startTime]);
+    // Clear interval when completed
+    if (statusIndex === 3) {
+      clearInterval(timer);
+    }
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, [startTime]);
 
   useEffect(() => {
     const generateQR = async () => {
@@ -468,6 +475,7 @@ const TransactionPage = () => {
           <div style={{ marginTop: 16, borderTop: "1px solid #e5e7eb" }} />
 
           {/* Progress Steps */}
+        
           <div
             style={{
               marginTop: 20,
@@ -496,18 +504,40 @@ const TransactionPage = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     borderRadius: "50%",
-                    border: `2px solid `,
-                    ...(index === 0 && {
-                      animation: "rotate 2s linear infinite",
-                      borderRightColor: "transparent",
+                    border: `2px solid ${
+                      index <= currentStatus ? status.color : "#6b7280"
+                    }`,
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    ...(index === currentStatus &&
+                      status.rotating && {
+                        animation: "rotate 2s linear infinite",
+                        borderRightColor: "transparent",
+                      }),
+                    ...(index < currentStatus && {
+                      // Completed previous steps get solid background with checkmark
+                      border: "none",
+                      background: status.color,
+                      color: "#fff",
                     }),
+                    ...(index === currentStatus &&
+                      !status.rotating && {
+                        // Current completed step also gets checkmark
+                        border: "none",
+                        background: status.color,
+                        color: "#fff",
+                      }),
                   }}
-                ></span>
+                >
+                  {index < currentStatus ||
+                  (index === currentStatus && !status.rotating)
+                    ? "✓"
+                    : ""}
+                </span>
                 <span>{status.name}</span>
               </div>
             ))}
           </div>
-
           {/* Summary */}
           <div style={{ marginTop: 20 }}>
             <div style={{ color: "#6b7280", fontSize: 12 }}>You Get</div>
@@ -584,4 +614,5 @@ const TransactionPage = () => {
 };
 
 export default TransactionPage;
+
 
