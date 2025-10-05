@@ -143,8 +143,8 @@ const statuses = [
     setTimeElapsed(elapsed);
 
     // Each status lasts 60 seconds, stop at status 3 (Completed)
-    const statusIndex = Math.min(Math.floor(elapsed / 60), 3);
-    setCurrentStatus(statusIndex);
+    // const statusIndex = Math.min(Math.floor(elapsed / 60), 3);
+   // setCurrentStatus(statusIndex);
 
     // Clear interval when completed
     if (statusIndex === 3) {
@@ -614,6 +614,7 @@ const statuses = [
 };
 
 export default TransactionPage;
+
 
 
 
