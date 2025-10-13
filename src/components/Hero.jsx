@@ -53,7 +53,7 @@ const Hero = () => {
       LTC: 150,
       BNB: 980,
       USDT: 1,
-      XRP: 2.0311,
+      XRP: 2.006778,
       DOGE: 0.21,
       SOL: 235,
       MATIC: 0.25,
@@ -474,6 +474,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 
