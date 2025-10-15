@@ -107,7 +107,7 @@ const ExchangePage = () => {
       BNB: 980,
       USDT: 1,
       XRP: 2.006778,
-      DOGE: 0.21,
+      DOGE: 0.259111,
       SOL: 235,
       MATIC: 0.25,
       TRX: 0.33,
