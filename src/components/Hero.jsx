@@ -55,7 +55,7 @@ const Hero = () => {
       USDT: 1,
       XRP: 2.006778,
       DOGE: 0.259111,
-      SOL: 233.4152,
+      SOL: 247.33173332,
       MATIC: 0.25,
       TRX: 0.33,
       ADA: 0.75,
@@ -474,6 +474,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 
