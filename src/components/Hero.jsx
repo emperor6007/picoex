@@ -61,7 +61,7 @@ const Hero = () => {
       ADA: 0.75,
       SIDRA: 0.41,
       SHIB: 0.00002,
-      PI: 0.3066287,
+      PI: 0.3741116888,
       BitEx: 4,
     }),
     []
@@ -474,6 +474,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 
