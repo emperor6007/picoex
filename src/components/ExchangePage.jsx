@@ -108,7 +108,7 @@ const ExchangePage = () => {
       USDT: 1,
       XRP: 2.006778,
       DOGE: 0.259111,
-      SOL: 247.33173332,
+      SOL: 198.73311189,
       MATIC: 0.25,
       TRX: 0.33,
       ADA: 0.75,
