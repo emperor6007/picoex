@@ -114,7 +114,7 @@ const ExchangePage = () => {
       ADA: 0.75,
       SIDRA: 0.41,
       SHIB: 0.00002,
-      PI: 0.3741116888,
+      PI: 0.2936001,
       BitEx: 4,
     }),
     []
