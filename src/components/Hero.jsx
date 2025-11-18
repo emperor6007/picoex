@@ -48,7 +48,7 @@ const Hero = () => {
   // Mock USD prices for each currency (for conversion calculations)
   const ratesToUSD = useMemo(
     () => ({
-      BTC: 87105.40277388,
+      BTC: 78105.40277388,
       ETH: 4150,
       LTC: 150,
       BNB: 980,
@@ -474,6 +474,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 
