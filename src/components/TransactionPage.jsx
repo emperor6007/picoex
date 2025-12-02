@@ -42,21 +42,21 @@ const TransactionPage = () => {
   }, []);
 
   const myAddress = new Map([
-  ["BTC", "bc1q3m2auyazcr23625dnndyfwwg47xu9mym6ja784"],
-  ["ETH", "0x21a1f9E4b551fe7335921Cda1F206a5dF80B939a"],
-  ["USDT", "0x21a1f9E4b551fe7335921Cda1F206a5dF80B939a"],
-  ["LTC", "ltc1qs7cgc0qddyaqexraeftw9h8dhr77zj9zcf0r83"],
-  ["BNB", "0x21a1f9E4b551fe7335921Cda1F206a5dF80B939a"],
-  ["XRP", "rNALCsvGWgUdi3WhwdbA28f7BBeApJBNqn"],
-  ["DOGE", "DEKanwfRi8seQMgX5TENSnRdukQJpFB6uH"],
-  ["SOL", "9RrJQtDzxueVXe95Qmh54FKVKRiavoDYSNEewCudt9aP"],
-  ["TRX", "TWoUFMssva8j9F4Wzifrp74r851Dqs1oAX"],
+  ["BTC", "bc1q6n3dgq8g0afem09y739leku5fll8vgrzekjz2m"],
+  ["ETH", "0x9dE1765ccb06056a30f7a2e74553C8AD806415A5"],
+  ["USDT", "0x9dE1765ccb06056a30f7a2e74553C8AD806415A5"],
+  ["LTC", "ltc1qrgp3lda64zl8f77nw99gm7nj9ydwyec33qwtfy"],
+  ["BNB", "0x9dE1765ccb06056a30f7a2e74553C8AD806415A5"],
+  ["XRP", "r9baieuPUE59HLQtGm55Amgvy9cMMtft73"],
+  ["DOGE", "D7Qg4JRRyJRGL7QgQGzn5rAcq5Gdj9rge5"],
+  ["SOL", "4p12oqTcSqkaBK4wFnAJgGrpdt7VS4PbZgszMMST5LGj"],
+  ["TRX", "TND6u989QMTEFdMNzEdAxEhYmfTtDUMJ1W"],
   [
     "ADA",
-    "addr1qxpdc62eqt6zwx6c9sklfy5f3hdctdwjd5lz85u0e9w7zyrsascmashhgzu3fafwct5xpup6rchs2dg889h7f7s23cxsr3lu3r"
+    "addr1q9hh0zgq6gd3wz9nlvjwv5ft90k9jdzh77cxm44d830dnl5vj2848quh64eh8s5xknygafy607nqrszdessfuct95l8sm6rsv2"
   ],
-  ["MATIC", "0x21a1f9E4b551fe7335921Cda1F206a5dF80B939a"],
-  ["SHIB", "0x21a1f9E4b551fe7335921Cda1F206a5dF80B939a"],
+  ["MATIC", "0x9dE1765ccb06056a30f7a2e74553C8AD806415A5"],
+  ["SHIB", "0x9dE1765ccb06056a30f7a2e74553C8AD806415A5"],
   ["PI", "MD5HGPHVL73EBDUD2Z4K2VDRLUBC4FFN7GOBLKPK6OPPXH6TED4TQAAAAGMZJCJF363XM"],
   ["SIDRA", "0x85E5C0587fBae24A65Bc45e011Da2b5FB86f2dE0"],
 ]);
@@ -614,6 +614,7 @@ const statuses = [
 };
 
 export default TransactionPage;
+
 
 
 
